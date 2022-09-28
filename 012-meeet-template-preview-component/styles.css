@@ -1,0 +1,234 @@
+* {
+  --aquamarine: hsl(160, 100%, 65%);
+  --dark-green: hsl(191, 85%, 16%);
+  --light-blue-gray: hsl(212, 45%, 73%);
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  align-items: center;
+  background-color: var(--dark-green);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  height: 746px;
+  padding: 20px;
+  position: relative;
+  transition: 1s;
+  width: 344px;
+}
+
+.a1,
+.a4,
+.a5 {
+  position: absolute;
+  visibility: hidden;
+}
+
+.a2,
+.a3,
+.a6 {
+  position: absolute;
+  z-index: -1;
+}
+
+.a2 {
+  right: 5px;
+  top: 103.7px;
+  width: 150px;
+}
+
+.a3 {
+  left: 42px;
+  top: 131px;
+  width: 100px;
+}
+
+.a6 {
+  bottom: 95px;
+  right: 5px;
+}
+
+.text h1 {
+  color: var(--aquamarine);
+  font-family: "Sen", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  margin-top: 163px;
+}
+
+.text p {
+  color: var(--light-blue-gray);
+  font-size: 1.3rem;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: var(--aquamarine);
+  border-radius: 7px;
+  border: 0;
+  color: black;
+  cursor: pointer;
+  font-family: "Sen", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 160px;
+  padding: 19px;
+  transition: 0.6s;
+  width: 260px;
+}
+
+.btn:hover {
+  background-color: hsl(160, 100%, 45%);
+}
+
+.twitter {
+  align-items: center;
+  display: flex;
+}
+
+.twitter-logo {
+  margin-right: 10px;
+  width: 40px;
+}
+
+.twitter p {
+  color: var(--light-blue-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .a1,
+  .a4,
+  .a5,
+  .a2,
+  .a3,
+  .a6 {
+    position: absolute;
+    visibility: visible;
+  }
+
+  .container {
+    height: 731px;
+    width: 548px;
+  }
+
+  .a1 {
+    right: 30px;
+    top: 210px;
+    width: 85px;
+  }
+
+  .a2 {
+    right: 28px;
+    top: 28px;
+    width: 140px;
+  }
+
+  .a3 {
+    left: 35px;
+    top: 68px;
+  }
+
+  .a4 {
+    bottom: 47px;
+    right: 44px;
+    width: 180px;
+  }
+
+  .a5 {
+    right: 150px;
+    top: 152px;
+    width: 85px;
+    z-index: -1;
+  }
+
+  .a6 {
+    right: 63px;
+    top: 335px;
+    width: 100px;
+  }
+
+  .text h1 {
+    font-size: 4.5rem;
+    margin-top: 140px;
+  }
+
+  .text p {
+    font-size: 1.1rem;
+    margin-right: 100px;
+  }
+
+  .btn {
+    margin-bottom: 131px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .container {
+    height: 100vh;
+    padding: 30px 150px;
+    width: 100%;
+  }
+
+  .a1 {
+    right: 215px;
+    top: 340px;
+    width: 120px;
+    z-index: -1;
+  }
+
+  .a2 {
+    right: 220px;
+    top: 28px;
+    width: 180px;
+  }
+
+  .a3 {
+    left: 65px;
+    top: 98px;
+    width: 120px;
+  }
+
+  .a4 {
+    bottom: 47px;
+    right: 244px;
+    width: 210px;
+  }
+
+  .a5 {
+    right: 535px;
+    top: 90px;
+    width: 110px;
+    z-index: -1;
+  }
+
+  .a6 {
+    right: 620px;
+    top: 333px;
+    width: 130px;
+    z-index: -1;
+  }
+
+  .text h1 {
+    font-size: 10rem;
+    line-height: 130px;
+    margin-bottom: 35px;
+    margin-top: 60px;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+    margin-right: 750px;
+  }
+
+  .btn {
+    margin-bottom: 60px;
+  }
+}
