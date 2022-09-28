@@ -1,0 +1,136 @@
+* {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: top -400px left -500px, bottom -350px right -520px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Dark-cyan);
+}
+
+.container {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 375px;
+  position: relative;
+}
+
+.img-row {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.img-row img {
+  transform: scale(1.07);
+  width: 100%;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  border: 6px solid white;
+  position: absolute;
+  right: 125px;
+  top: 85px;
+}
+
+.text-row {
+  text-align: center;
+}
+
+.text-row .name {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-bottom: 9px;
+  margin-top: 66px;
+}
+
+span {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.text-row .place {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+hr {
+  color: var(--Dark-grayish-blue);
+  opacity: 0.1;
+}
+
+.details {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+.col {
+  flex: 1;
+}
+
+.col h2 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.col p {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+
+.attribution {
+  bottom: 10px;
+  font-size: 11px;
+  position: absolute;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 44%, 20%);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-position: top -400px left -500px, bottom -400px right -480px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    background-position: top -580px left -583.3px, bottom -650px right -520px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-position: top -760px left -666.6px, bottom -900px right -560px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-position: top -940px left -750px, bottom -1150px right -600px;
+  }
+}
