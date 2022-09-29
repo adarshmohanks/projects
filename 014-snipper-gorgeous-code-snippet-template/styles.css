@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid rgb(209, 209, 209);
+  display: grid;
+  grid-template-rows: 922px auto;
+  height: 1843px;
+  width: 376px;
+}
+
+.top-row {
+  background: url(Assets/Background.png);
+  background-position-x: center;
+  background-size: cover;
+  padding: 44px 20px 0 20px;
+  position: relative;
+  text-align: center;
+  width: 376px;
+}
+
+.logo {
+  left: 20px;
+  position: absolute;
+}
+
+.handburger-menu {
+  position: absolute;
+  right: 20px;
+}
+
+.search,
+.sign-in,
+.btn1 {
+  position: absolute;
+  visibility: hidden;
+}
+
+.top-row h1 {
+  font-size: 2.83rem;
+  margin-bottom: 14px;
+  margin-top: 70px;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 18px;
+  padding: 18px;
+  transition: 0.8s;
+  width: 100%;
+}
+
+span {
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: hsl(340, 57%, 74%);
+}
+
+.para2 {
+  margin-bottom: 45px;
+}
+
+.snippet-mobile {
+  border-radius: 10px 10px 0 0;
+  width: 335px;
+}
+
+.snippet-tablet,
+.snippet-image {
+  visibility: hidden;
+  width: 0px;
+}
+
+.bottom-row {
+  padding: 70px 20px 41px 20px;
+  position: relative;
+}
+
+.coustomizable-image {
+  margin-bottom: 30px;
+  margin-left: 8px;
+  text-align: center;
+  width: 320px;
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+}
+
+.btn2 {
+  margin-bottom: 58px;
+  margin-top: 18px;
+  width: 220px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-rows: 930px 873px;
+    height: 1803px;
+    width: 698px;
+  }
+
+  .top-row {
+    padding: 50px 38px 0 38px;
+    width: 698px;
+  }
+
+  .logo {
+    left: 38px;
+  }
+
+  .handburger-menu,
+  .snippet-mobile {
+    visibility: hidden;
+  }
+
+  .search {
+    right: 350px;
+    visibility: visible;
+  }
+
+  .sign-in {
+    color: gray;
+    right: 279px;
+    text-decoration: none;
+    visibility: visible;
+  }
+
+  .btn {
+    height: 54px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    padding: 0;
+    width: 210px;
+  }
+
+  .btn1 {
+    right: 38px;
+    top: 13px;
+    visibility: visible;
+  }
+
+  .top-row h1 {
+    font-size: 3.1rem;
+    margin-bottom: 13px;
+    margin-top: 97px;
+  }
+
+  .para1 {
+    padding: 0 17px;
+  }
+
+  .para2 {
+    margin-bottom: 100px;
+  }
+
+  .snippet-tablet {
+    border-radius: 10px 10px 0 0;
+    left: 38px;
+    position: absolute;
+    visibility: visible;
+    width: 621px;
+  }
+
+  .bottom-row {
+    padding: 60px 34px 38px 34px;
+  }
+
+  .coustomizable-image {
+    margin-bottom: 55px;
+    margin-left: 130px;
+    width: 393px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .btn2 {
+    margin-bottom: 70px;
+  }
+
+  .logo2 {
+    bottom: 38px;
+    left: 34px;
+    position: absolute;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .footer .a1 {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1310px) {
+  body {
+    padding: 0px;
+  }
+
+  .container {
+    border: 0;
+    grid-template-rows: 904px 670px;
+    height: 1574px;
+    width: 100%;
+  }
+
+  .top-row {
+    padding: 50px 160px 0 160px;
+    width: 100%;
+  }
+
+  .logo,
+  .logo2 {
+    margin-left: 124px;
+  }
+
+  .search {
+    right: 472px;
+  }
+
+  .sign-in {
+    right: 402px;
+  }
+
+  .btn1 {
+    right: 160px;
+    top: 15px;
+  }
+
+  .top-row h1 {
+    margin-top: 80px;
+  }
+
+  .para1 {
+    padding: 0 290px;
+  }
+
+  .snippet-tablet {
+    visibility: hidden;
+  }
+
+  .snippet-image {
+    left: 160px;
+    position: absolute;
+    visibility: visible;
+    width: 1216px;
+  }
+
+  .bottom-row {
+    padding: 70px 160px 70px 160px;
+  }
+
+  .coustomizable-image {
+    position: absolute;
+    right: 160px;
+    width: 460px;
+  }
+
+  .col {
+    left: 160px;
+    position: absolute;
+    width: 680px;
+  }
+
+  .col h2 {
+    font-size: 2.36rem;
+    margin-top: 40px;
+  }
+
+  .para3 {
+    padding-right: 130px;
+  }
+
+  .logo2 {
+    bottom: 68px;
+  }
+
+  .footer {
+    bottom: 68px;
+    position: absolute;
+    right: 160px;
+  }
+}
