@@ -1,2 +1,2 @@
 # Projects
-Here are some front-end projects I have worked on.
+Here are some front end mini projects I have worked on.
