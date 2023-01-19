@@ -1,0 +1,156 @@
+* {
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --White: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1080px;
+}
+
+.grid1 {
+  display: grid;
+  margin-bottom: 80px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid1__text {
+  max-width: 460px;
+}
+
+.grid1__heading {
+  font-size: 4rem;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.grid1__desc {
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 1.2rem;
+}
+
+.grid1__ratings {
+  align-self: center;
+  justify-self: center;
+}
+
+.grid1__star {
+  background-color: var(--Light-Grayish-Magenta);
+  border-radius: 6px;
+  max-width: 410px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.grid1__star span {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Magenta);
+}
+
+.star2 {
+  margin-left: 57.5px;
+}
+
+.star3 {
+  margin-left: 115px;
+}
+
+.grid2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+}
+
+.grid2__card {
+  width: 320px;
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  color: white;
+  padding: 40px 30px;
+  justify-self: center;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__header img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.card__header p {
+  margin-top: 5px;
+  color: var(--Soft-Pink);
+}
+
+.card2 {
+  position: relative;
+  top: 25px;
+}
+
+.card3 {
+  position: relative;
+  top: 50px;
+}
+
+@media (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    margin: 30px;
+    width: 375px;
+    height: 1330px;
+  }
+
+  .grid1 {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+  }
+
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .star2 {
+    margin-left: 0px;
+  }
+
+  .star3 {
+    margin-left: 0px;
+  }
+
+  .card2 {
+    position: relative;
+  }
+
+  .card3 {
+    position: relative;
+  }
+}

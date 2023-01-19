@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  --Blue: hsl(212, 86%, 64%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Orange: hsl(34, 97%, 64%);
+  --Red: hsl(0, 78%, 62%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.container {
+  width: 375px;
+}
+
+.container__header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header__heading {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.8rem;
+}
+
+.h1 {
+  font-weight: 200;
+}
+
+.h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.header__desc {
+  color: var(--Grayish-Blue);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.main__card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  height: 230px;
+  width: 350px;
+  margin: 18px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.top__color {
+  width: 350px;
+  position: relative;
+  right: 30px;
+  bottom: 30px;
+  height: 5px;
+  border-radius: 8px 8px 0 0;
+  z-index: 1;
+}
+
+.top__color--cyan {
+  background-color: var(--Cyan);
+}
+
+.top__color--red {
+  background-color: var(--Red);
+}
+
+.top__color--orange {
+  background-color: var(--Orange);
+}
+
+.top__color--blue {
+  background-color: var(--Blue);
+}
+
+.card__heading {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card__desc {
+  color: var(--Grayish-Blue);
+  font-size: 1rem;
+}
+
+.card__img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Very-Dark-Blue);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container__body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1130px;
+    position: relative;
+  }
+
+  .main__card--card1,
+  .main__card--card3 {
+    margin-top: 140px;
+  }
+
+  .main__card--card4 {
+    margin-top: -115px;
+  }
+}
